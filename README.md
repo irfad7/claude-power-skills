@@ -22,24 +22,35 @@ No wrappers. No frameworks. No dependencies. Just SKILL.md files that plug direc
 
 ## Quick Start
 
-**Option 1: Plugin install**
+**Option 1: Clone and symlink into your project**
 ```bash
-claude plugins add irfad7/claude-power-skills
+# Clone the repo somewhere permanent
+git clone https://github.com/irfad7/claude-power-skills.git ~/claude-power-skills
+
+# Symlink all skills into your project
+for skill in ~/claude-power-skills/skills/*/; do
+  ln -sf "$skill" your-project/skills/$(basename "$skill")
+done
 ```
 
-**Option 2: Clone and use**
+**Option 2: Cherry-pick individual skills**
 ```bash
-git clone https://github.com/irfad7/claude-power-skills.git ~/.claude/skills/power-skills
-# Skills auto-discover from the skills/ directory
+# Clone once, then copy just what you need
+git clone https://github.com/irfad7/claude-power-skills.git ~/claude-power-skills
+
+# Copy specific skills into your project's skills/ directory
+cp -r ~/claude-power-skills/skills/bughunter your-project/skills/
+cp -r ~/claude-power-skills/skills/ultraplan your-project/skills/
 ```
 
-**Option 3: Cherry-pick individual skills**
+**Option 3: Git submodule** (keeps skills updatable)
 ```bash
-# Copy just the skills you want into your project's skills/ directory
-cp -r claude-power-skills/skills/bughunter your-project/skills/
+cd your-project
+git submodule add https://github.com/irfad7/claude-power-skills.git .claude-power-skills
+ln -sf .claude-power-skills/skills/* skills/
 ```
 
-Then invoke any skill by name:
+Skills live in your project's `skills/` directory. Claude Code auto-discovers them. Invoke by name:
 ```
 /bughunter        → adversarial security analysis
 /ultraplan        → deep planning with creative exploration
