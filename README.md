@@ -22,35 +22,23 @@ No wrappers. No frameworks. No dependencies. Just SKILL.md files that plug direc
 
 ## Quick Start
 
-**Option 1: Clone and symlink into your project**
-```bash
-# Clone the repo somewhere permanent
-git clone https://github.com/irfad7/claude-power-skills.git ~/claude-power-skills
-
-# Symlink all skills into your project
-for skill in ~/claude-power-skills/skills/*/; do
-  ln -sf "$skill" your-project/skills/$(basename "$skill")
-done
+**Install as a plugin** (recommended)
 ```
+/plugin install irfad7/claude-power-skills
+```
+That's it. All 20 skills are available immediately across all your projects.
 
-**Option 2: Cherry-pick individual skills**
+**Or cherry-pick into a single project**
 ```bash
-# Clone once, then copy just what you need
+# Clone the repo
 git clone https://github.com/irfad7/claude-power-skills.git ~/claude-power-skills
 
-# Copy specific skills into your project's skills/ directory
+# Copy the skills you want into your project
 cp -r ~/claude-power-skills/skills/bughunter your-project/skills/
 cp -r ~/claude-power-skills/skills/ultraplan your-project/skills/
 ```
 
-**Option 3: Git submodule** (keeps skills updatable)
-```bash
-cd your-project
-git submodule add https://github.com/irfad7/claude-power-skills.git .claude-power-skills
-ln -sf .claude-power-skills/skills/* skills/
-```
-
-Skills live in your project's `skills/` directory. Claude Code auto-discovers them. Invoke by name:
+Once installed, invoke by name:
 ```
 /bughunter        → adversarial security analysis
 /ultraplan        → deep planning with creative exploration
@@ -215,6 +203,8 @@ Forces problem reframing, generates 2-3 approaches with honest trade-offs, runs 
 
 ```
 claude-power-skills/
+├── .claude-plugin/
+│   └── plugin.json
 ├── skills/
 │   ├── anti-distillation/SKILL.md
 │   ├── autodream/SKILL.md

@@ -1,0 +1,23 @@
+{
+  "name": "claude-power-skills",
+  "version": "1.0.0",
+  "description": "20 power-user skills for Claude Code — session management, multi-agent orchestration, adversarial testing, calibrated estimation, decision archaeology, and more.",
+  "author": {
+    "name": "Irfad Imtiaz",
+    "url": "https://github.com/irfad7"
+  },
+  "homepage": "https://github.com/irfad7/claude-power-skills",
+  "repository": "https://github.com/irfad7/claude-power-skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "session-management",
+    "code-review",
+    "security-audit",
+    "estimation",
+    "orchestration",
+    "bug-hunting",
+    "planning",
+    "documentation"
+  ]
+}
