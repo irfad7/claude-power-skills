@@ -233,17 +233,9 @@ claude-power-skills/
 
 ---
 
-## Contributing
-
-Found a bug in a skill? Want to add a new one? PRs welcome.
-
-Skills should follow the existing format: YAML frontmatter with `name`, `description`, and `metadata`, followed by a structured protocol. Every skill should define when it activates, what steps it follows, and what output it produces.
-
----
-
 ## License
 
-MIT — use these however you want.
+MIT — use these however you want. PRs welcome.
 
 ---
 
