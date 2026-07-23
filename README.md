@@ -263,6 +263,7 @@ version.
 | [Estate Planning Legal MCPs](https://github.com/redwoodmeridian/ep-legal-mcps) | MCP servers connecting Claude to Lawmatics, DecisionVault and WealthCounsel |
 | [Cicero](https://github.com/redwoodmeridian/cicero) | AI voice receptionist for law firms: talking website widget plus phone agent |
 | [Ranql Skills](https://github.com/redwoodmeridian/ranql-skills) | Claude Code plugin that runs a law firm's marketing operation |
+| [Firm Brain Starter](https://github.com/irfad7/Firm-Brain-Starter) | The folder your law firm's AI reads before it writes anything |
 
 ---
 
