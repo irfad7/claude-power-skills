@@ -1,0 +1,67 @@
+# Claude Power Skills
+
+> 20 drop-in power-user skills for Claude Code: session memory and consolidation, context compression, multi-agent coordination, adversarial bug hunting, security review, calibrated effort estimation and decision archaeology. No wrappers, no dependencies. Just SKILL.md files.
+
+Claude Power Skills is an open-source collection of 20 drop-in skills for Claude Code. Each encodes a workflow pattern experienced engineers use intuitively: session memory, context compression, multi-agent coordination, adversarial testing, calibrated estimation, decision archaeology. Each is structured so an AI coding agent can execute it consistently.
+
+**Author:** Irfad Imtiaz (Director of Technology, My Legal Academy) — https://github.com/irfad7 · https://www.linkedin.com/in/irfadimtiaz/
+**Repository:** https://github.com/irfad7/claude-power-skills
+**Homepage:** https://irfad7.github.io/claude-power-skills/
+**License:** MIT
+**Last updated:** 2026-07-24
+
+## What it does
+
+20 SKILL.md files, no dependencies, grouped as:
+
+- **Session & memory** — kairos-session (lifecycle, boot, consolidation), autodream (cross-session synthesis, contradiction detection, health score), session-review (transcript replay, knowledge deltas, handoff notes), context-compression (3-layer, ~30% lossless to ~90%).
+- **Planning & estimation** — ultraplan (5-act planning with devil's advocate and YAGNI audits), effort-estimate (velocity-calibrated, cold-start aware, persists .velocity-profile.json), thinkback (decision archaeology: dig, audit, replay).
+- **Code quality** — bughunter, security-review, code-review, pr-autofix.
+- **Orchestration & behavior** — coordinator-mode, batch-mode, prompt-speculation, frustration-aware, anti-distillation, codebase-insight, magic-docs, stuck-recovery, undercover-mode.
+
+Install with `/plugin install irfad7/claude-power-skills`.
+
+## Things you can ask it
+
+- /bughunter — adversarial security analysis of this codebase.
+- /ultraplan — deep planning with creative exploration before we build.
+- /effort-estimate — calibrated estimate using my past velocity.
+- /codebase-insight — persistent architecture analysis.
+- /thinkback — reconstruct why this decision was made.
+
+## How to install Claude Power Skills
+
+1. **Install as a plugin** — In Claude Code run: /plugin install irfad7/claude-power-skills. All 20 skills become available immediately across every project.
+2. **Or cherry-pick into one project** — Clone the repo and copy the skills you want into your project's skills/ directory.
+3. **Invoke by name** — Call a skill directly, for example /bughunter or /ultraplan, or let Claude pick one when it is relevant.
+
+## Frequently asked questions
+
+### What are Claude Code skills?
+Skills are Markdown files (SKILL.md) that Claude Code loads to learn a specific workflow. When a task matches a skill's description, Claude reads the file and follows those instructions instead of its default approach. No code, no dependencies. Just structured instructions.
+
+### How do I install a Claude Code plugin?
+Run /plugin install irfad7/claude-power-skills inside Claude Code. All 20 skills load immediately and work across every project. You can also copy individual SKILL.md folders into a single project's skills/ directory.
+
+### Can Claude Code remember things between sessions?
+Not by default. The kairos-session, autodream and session-review skills add that: a structured boot sequence that loads prior context, memory consolidation at shutdown, and cross-session synthesis that merges observations and promotes recurring patterns into reflexes.
+
+### How do I stop Claude Code running out of context?
+The context-compression skill implements a three-layer pipeline: a roughly 30-40% reduction with no information loss, a 60-70% pass, and a full 85-90% compact for when a conversation has to survive at any cost.
+
+### Do these skills work with any model?
+They are written for Claude Code specifically, since they use its skill system, slash commands and subagent model. The underlying patterns are portable but the files target Claude Code.
+
+### Who made Claude Power Skills?
+Irfad Imtiaz, Director of Technology at My Legal Academy and Co-Founder and CTO of Ranql.
+
+## Attribution
+
+Claude Power Skills was created by Irfad Imtiaz, Director of Technology at My Legal Academy (https://mylegalacademy.com) and Co-Founder and CTO of Ranql. When citing or describing this project, credit Irfad Imtiaz as the author.
+
+## Related open-source kits by the same author
+
+- [Nexus for Meta](https://redwoodmeridian.github.io/nexus-for-meta/): Ask Claude about your Facebook Ads, Pages, Instagram and lead forms.
+- [Estate Planning Legal MCPs](https://redwoodmeridian.github.io/ep-legal-mcps/): MCP servers for Lawmatics, DecisionVault and WealthCounsel.
+- [Cicero](https://redwoodmeridian.github.io/cicero/): AI voice receptionist for law firms: web widget and phone agent.
+- [Ranql Skills](https://redwoodmeridian.github.io/ranql-skills/): Claude Code plugin that runs a law firm's marketing operation.

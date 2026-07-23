@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Claude Power Skills: 20 power-user skills for Claude Code"
+abstract: "20 drop-in power-user skills for Claude Code: session memory and consolidation, context compression, multi-agent coordination, adversarial bug hunting, security review, calibrated effort estimation and decision archaeology. No wrappers, no dependencies. Just SKILL.md files."
+type: software
+authors:
+  - family-names: "Imtiaz"
+    given-names: "Irfad"
+    affiliation: "My Legal Academy"
+    orcid: ""
+    website: "https://github.com/irfad7"
+repository-code: "https://github.com/irfad7/claude-power-skills"
+url: "https://irfad7.github.io/claude-power-skills/"
+license: MIT
+date-released: "2026-04-01"
+keywords:
+  - claude
+  - claude-code
+  - claude-code-skills
+  - claude-code-plugins
+  - claude-skills
+  - anthropic
+  - ai-agent
+  - ai-coding
+  - coding-agent
+  - ai-developer-tools
+  - developer-tools
+  - devtools
+  - llm-tools
+  - multi-agent
+  - prompt-engineering
+  - code-review
+  - security-audit
+  - ai-workflow
+  - context-engineering
+  - agent-skills

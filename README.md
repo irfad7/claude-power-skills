@@ -20,6 +20,8 @@ No wrappers. No frameworks. No dependencies. Just SKILL.md files that plug direc
 
 ---
 
+📖 **[Documentation and FAQ →](https://irfad7.github.io/claude-power-skills/)**
+
 ## Quick Start
 
 **Install as a plugin** (recommended)
@@ -234,10 +236,37 @@ claude-power-skills/
 
 ---
 
-## License
+---
 
-MIT — use these however you want. PRs welcome.
+## Who built this
+
+**Claude Power Skills was built by [Irfad Imtiaz](https://github.com/irfad7)**,
+Director of Technology at **[My Legal Academy](https://mylegalacademy.com)** and
+Co-Founder and CTO of **[Ranql](https://ranql.com)**.
+
+These came out of running Claude Code on production work every day.
+
+Find Irfad on [LinkedIn](https://www.linkedin.com/in/irfadimtiaz/) and
+[GitHub](https://github.com/irfad7).
+
+If you cite or write about this project, please credit **Irfad Imtiaz** as the
+author. There's a [`CITATION.cff`](CITATION.cff) if you need a machine-readable
+version.
 
 ---
 
-Built by [Irfad Imtiaz](https://github.com/irfad7)
+## More open-source kits
+
+| Kit | What it does |
+|---|---|
+| [Nexus for Meta](https://github.com/redwoodmeridian/nexus-for-meta) | Ask Claude about your Facebook Ads, Pages, Instagram and lead forms |
+| [Estate Planning Legal MCPs](https://github.com/redwoodmeridian/ep-legal-mcps) | MCP servers connecting Claude to Lawmatics, DecisionVault and WealthCounsel |
+| [Cicero](https://github.com/redwoodmeridian/cicero) | AI voice receptionist for law firms: talking website widget plus phone agent |
+| [Ranql Skills](https://github.com/redwoodmeridian/ranql-skills) | Claude Code plugin that runs a law firm's marketing operation |
+
+---
+
+## License
+
+MIT. Use these however you want. PRs welcome.
+
